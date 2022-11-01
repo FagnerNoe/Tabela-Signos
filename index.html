@@ -1,0 +1,58 @@
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/img/cancer_barra.png">
+    <script src="assets/js/script.js" defer ></script>
+    <title>Signos</title>
+</head>
+<body>
+    <header>
+
+        <h1>Signos</h1>
+        <p>Descubra o Seu , e suas caracteristicas !! </p>
+
+    </header>
+    
+    <div id="abrirModal" class="modal">
+        <div>
+            <img  id="imagem" src="assets/img/aries.jpg">
+            <h2 value="horoscopo" id="nome_signo"></h2>
+            <p class="descricao" id="info"> descricao </p>
+            <a href="#fechar" title="Fechar" class="fechar">Entendi</a>
+        </div>
+        
+    </div>
+    
+    <div class="container">
+        <form action="pegarData">
+            <p >Selecione sua data de Nascimento</p>
+            <input type="number" id='datas' name="data" min="1" max="31"  placeholder="Dia">
+            <select class="meses_opcao" id="meses_selecao">
+                <option class="meses" value="">Selecione o Mês</option>
+                <option class="meses" value="janeiro">Janeiro</option>
+                <option class="meses" value="fevereiro">Fevereiro</option>
+                <option class="meses" value="marco">Março</option>
+                <option class="meses" value="abril">Abril</option>
+                <option class="meses" value="maio">Maio</option>
+                <option class="meses" value="junho">Junho</option>
+                <option class="meses" value="julho">Julho</option>
+                <option class="meses" value="agosto">Agosto</option>
+                <option class="meses" value="setembro">Setembro</option>
+                <option class="meses" value="outubro">Outubro</option>
+                <option class="meses" value="novembro">Novembro</option>
+                <option class="meses" value="dezembro">Dezembro</option>
+            </select>
+           <a href="#abrirModal" id="descobrir">Descobrir</a>           
+       
+        </form>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
